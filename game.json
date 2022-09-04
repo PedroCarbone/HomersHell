@@ -741,6 +741,34 @@
         "name": "assets\\derrota.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "fx sounds/fuego.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "fx sounds\\fuego.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fuego.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fuego.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fuego 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fuego 2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -772,7 +800,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.795999999999994,
+        "zoomFactor": 0.5759999999999939,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -977,7 +1005,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Donuts in Hell",
+          "string": "Homer's Hell",
           "font": "font\\Simpsonfont.ttf",
           "characterSize": 120,
           "color": {
@@ -1173,8 +1201,8 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.49600000000000033,
-        "windowMask": false
+        "zoomFactor": 0.5500000000000002,
+        "windowMask": true
       },
       "objectsGroups": [
         {
@@ -1188,6 +1216,26 @@
             },
             {
               "name": "dona2"
+            }
+          ]
+        },
+        {
+          "name": "Fuegos",
+          "objects": [
+            {
+              "name": "fuego"
+            },
+            {
+              "name": "fuego2"
+            },
+            {
+              "name": "fuego3"
+            },
+            {
+              "name": "fuego4"
+            },
+            {
+              "name": "fuego5"
             }
           ]
         }
@@ -1219,7 +1267,7 @@
           "angle": 0,
           "customSize": true,
           "height": 64.68492889404297,
-          "layer": "",
+          "layer": "HUD",
           "name": "Score",
           "persistentUuid": "59c2bfe0-b72c-4b2f-b9b2-b0d87adb606e",
           "width": 774.029541015625,
@@ -1234,7 +1282,7 @@
           "angle": 0,
           "customSize": true,
           "height": 65.23287963867188,
-          "layer": "",
+          "layer": "HUD",
           "name": "Life",
           "persistentUuid": "7ef31e14-c3c1-4267-b908-033929c558c2",
           "width": 236.46917724609375,
@@ -1249,13 +1297,93 @@
           "angle": 0,
           "customSize": true,
           "height": 256,
-          "layer": "",
+          "layer": "Personaje",
           "name": "homer",
           "persistentUuid": "1ee92737-24d5-40ba-94e4-266519862ecf",
           "width": 256,
-          "x": 525,
-          "y": 447,
+          "x": 539,
+          "y": 419,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 356,
+          "layer": "Fondo",
+          "name": "fuego",
+          "persistentUuid": "7a42f164-0ff2-4df1-bdce-58a9be93bd9f",
+          "width": 356,
+          "x": -29,
+          "y": 389,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 356,
+          "layer": "Fondo",
+          "name": "fuego2",
+          "persistentUuid": "f35c0f58-7eae-44c2-96f4-72732c501638",
+          "width": 356,
+          "x": 266,
+          "y": 390,
+          "zOrder": 9,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 356,
+          "layer": "Fondo",
+          "name": "fuego3",
+          "persistentUuid": "42439a66-3aa2-432d-8ed4-c06fa01f136c",
+          "width": 356,
+          "x": 859,
+          "y": 392,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 356,
+          "layer": "Fondo",
+          "name": "fuego4",
+          "persistentUuid": "22e1445b-6743-48f4-b4d6-ae39850147a2",
+          "width": 356,
+          "x": 556,
+          "y": 392,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 356,
+          "layer": "Fondo",
+          "name": "fuego5",
+          "persistentUuid": "d4bbf066-e311-409c-8c20-c38d0e9ed001",
+          "width": 356,
+          "x": 1153,
+          "y": 393,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1306,8 +1434,333 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "assets\\cabeza.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 781.132080078125,
+                            "y": 144.22463989257812
+                          },
+                          {
+                            "x": 1158.67919921875,
+                            "y": 482.7152099609375
+                          },
+                          {
+                            "x": 1119.6226806640625,
+                            "y": 1174.885009765625
+                          },
+                          {
+                            "x": 570.660400390625,
+                            "y": 1161.8662109375
+                          },
+                          {
+                            "x": 407.9245300292969,
+                            "y": 842.9038696289062
+                          },
+                          {
+                            "x": 203.96226501464844,
+                            "y": 408.9416198730469
+                          },
+                          {
+                            "x": 299.4339599609375,
+                            "y": 228.8472900390625
+                          },
+                          {
+                            "x": 535.9434204101562,
+                            "y": 81.30011749267578
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "fuego",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fuego",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "fuego2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fuego",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "fuego3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fuego",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "fuego4",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fuego",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "fuego5",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fuego",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\fuego 2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2177,114 +2630,6 @@
                 ""
               ]
             }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    }
-                  ],
-                  "actions": []
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Level1\"",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "SourisBouton"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    }
-                  ],
-                  "actions": []
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"MainMenu\"",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
           ]
         },
         {
@@ -2309,8 +2654,8 @@
               },
               "parameters": [
                 "Score",
-                "=",
-                "5"
+                ">=",
+                "50"
               ]
             }
           ],
@@ -2355,9 +2700,47 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "fx sounds\\fuego.mp3",
+                "yes",
+                "50",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 7722248,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8783616,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Fondo",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
@@ -2378,6 +2761,39 @@
               "width": 0
             }
           ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 9505328,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8675696,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Personaje",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 9505328,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8675696,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Obstáculos",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 9505328,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8675696,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "HUD",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         }
       ],

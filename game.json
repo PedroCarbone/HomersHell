@@ -9,7 +9,7 @@
   "properties": {
     "adaptGameResolutionAtRuntime": false,
     "folderProject": false,
-    "orientation": "portrait",
+    "orientation": "landscape",
     "packageName": "com.example.geometrymonster",
     "pixelsRounding": false,
     "projectUuid": "21a53b6f-85aa-4380-893f-a2ad271bf54f",
@@ -18,12 +18,12 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "Catch Game",
+    "name": "Homer's Hell",
     "description": "",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "E:\\Pedro\\GDevelop\\HomersHell",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -44,7 +44,9 @@
       "showGDevelopSplash": true,
       "showProgressBar": true
     },
-    "authorIds": [],
+    "authorIds": [
+      "eLPA8R2hMkRSCZuPVYqEMbEfKRm2"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
